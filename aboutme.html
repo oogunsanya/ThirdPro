@@ -5,6 +5,11 @@
 		<title>Project 1 About</title>
 		<link rel="stylesheet" href="cssstyles/normalize.css">
 		<link rel="stylesheet" href="cssstyles/index.css">
+		<script src="scripts/modernizr-2.6.1.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="lean-slider.js"></script>
+		<link rel="stylesheet" href="lean-slider.css" type="text/css" />
+    <link rel="stylesheet" href="sample-styles.css" type="text/css" />
 	</head>
 
 	<body>
@@ -28,6 +33,43 @@
 		<img width="680" src="media/soccer01.jpg" alt="Second picture"/>
     <iframe allowfullscreen height="450" src="https://www.youtube.com/embed/h38C08nfYr0" width="680"></iframe>
     </section>
+    		<div class="slider-wrapper">
+			<div id="slider">
+				<div class="slider1">
+					<img src="media/ronaldo.png" title="Ronaldo" alt="Ronaldo" />
+		  </div>
+		  	<div class="slider2">
+					<img src="media/mbappa.png" alt="Mbappa" />
+		  </div>
+		  	<div class="slider3">
+					<img src="media/bruyne.png" alt="Bruyne" />
+		  </div>
+		  	<div class="slider4">
+					<img src="media/hazard.png" alt="Hazard" />
+		  </div>
+		  	<div class="slider5">
+					<img src="media/afcon.jpg" alt="what" />
+		  </div>
+		</div>
+		<div id="slider-direction-nav"></div>
+		<div id="slider-control-nav"></div>
+   </div>
+
+
+
+
+      <script type="text/javascript">
+    $(document).ready(function() {
+    	var slider = $('#slider').leanSlider({
+    		directionNav: '#slider-direction-nav',
+    		controlNav: '#slider-control-nav'
+    	}) ;
+
+    	$('#slider').click(function(evt){
+    		alert('I was clicked');
+    	})
+    });
+  </script>
 	</body>
 </html>
 
