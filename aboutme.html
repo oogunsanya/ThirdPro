@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Project 1 About</title>
-		<link rel="stylesheet" href="cssstyles/normalize.css">
-		<link rel="stylesheet" href="cssstyles/index.css">
-		<script src="scripts/modernizr-2.6.1.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-		<script src="lean-slider.js"></script>
-		<link rel="stylesheet" href="lean-slider.css" type="text/css" />
-    <link rel="stylesheet" href="sample-styles.css" type="text/css" />
-	</head>
-
-	<body>
-	 <nav id="indexnav11">
-		<ul>
-			<li><a href="index.html" target="self">Home</a></li> 
-			<li id="onpage"><a href="aboutme.html" target="self">About</a></li> 
-			<li><a href="myresume.html" target="self">Resume</a></li> 
-			<li><a href="mysupport.html" target="self">Support</a></li> 
-		</ul>
-	 </nav>  
-		<section>
-			<h2 id="pic"><strong>Profile</strong></h2>
-			<img id="med" src="media/seun.jpg" alt="My picture"/>
-			<h3 id="pics">Discover the Unknown</h3>
-			<p id="pi">Oluwaseun Bolaji Ogunsanya, born 23 January 1998 is a Nigerian soccer player who currently plays for NCAA Illinois Institute of Technology and the Skulls FC. He primarily plays as a wide midfielder and as a wide foward. Olu's creativity, speed, strength and technical ability are widely acknowledged. He has been described as "a cross merchant". He is often ranked by coaches, fans, colleagues and commentators as a great player.</p>
-			<p id="pi"> Olu is the son of a retired professional soccer player who played for the Nigerian national team from 2004 - 2008. Olu led the 2017 season with assists for the Illinois tech scarlet hawks and named first team all independent. There is a long list of other recognitions won by Olu. </p>
-		</section>	
-
-		<section>
-		<img width="680" src="media/soccer01.jpg" alt="Second picture"/>
-    <iframe allowfullscreen height="450" src="https://www.youtube.com/embed/h38C08nfYr0" width="680"></iframe>
-    </section>
-    		<div class="slider-wrapper">
-			<div id="slider">
-				<div class="slider1">
-					<img src="media/ronaldo.png" title="Ronaldo" alt="Ronaldo" />
-		  </div>
-		  <div class="slider2">
-					<img src="media/neymar.png" title="Neymar" alt="Neymar" />
-		  </div>
-		  	<div class="slider3">
-					<img src="media/mbappa.png" title="Mbappe" alt="Mbappa" />
-		  </div>
-		  	<div class="slider4">
-					<img src="media/bruyne.png" title="Bruyne" alt="Bruyne" />
-		  </div>
-		  	<div class="slider5">
-					<img src="media/hazard.png" title="Hazard" alt="Hazard" />
-		  </div>
-		</div>
-		<div id="slider-direction-nav"></div>
-		<div id="slider-control-nav"></div>
-   </div>
-
-
-    <script type="text/javascript">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 1 About</title>
+  <link href="cssstyles/normalize.css" rel="stylesheet">
+  <link href="cssstyles/index.css" rel="stylesheet">
+  <script src="scripts/modernizr-2.6.1.min.js">
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+  </script>
+  <script src="lean-slider.js">
+  </script>
+  <link href="cssstyles/lean-slider.css" rel="stylesheet" type="text/css">
+  <link href="cssstyles/sample-styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <nav id="indexnav11">
+    <ul>
+      <li>
+        <a href="index.html" target="self">Home</a>
+      </li>
+      <li id="onpage">
+        <a href="aboutme.html" target="self">About</a>
+      </li>
+      <li>
+        <a href="myresume.html" target="self">Resume</a>
+      </li>
+      <li>
+        <a href="mysupport.html" target="self">Support</a>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <h2 id="pic"><strong>Profile</strong></h2><img alt="My picture" id="med" src="media/seun.jpg">
+    <h3 id="pics">Discover the Unknown</h3>
+    <p id="pi">Oluwaseun Bolaji Ogunsanya, born 23 January 1998 is a Nigerian soccer player who currently plays for NCAA Illinois Institute of Technology and the Skulls FC. He primarily plays as a wide midfielder and as a wide foward. Olu's creativity, speed, strength and technical ability are widely acknowledged. He has been described as "a cross merchant". He is often ranked by coaches, fans, colleagues and commentators as a great player.</p>
+    <p id="pi">Olu is the son of a retired professional soccer player who played for the Nigerian national team from 2004 - 2008. Olu led the 2017 season with assists for the Illinois tech scarlet hawks and named first team all independent. There is a long list of other recognitions won by Olu.</p>
+  </section>
+  <section>
+    <img alt="Second picture" src="media/soccer01.jpg" width="680"> <iframe allowfullscreen height="450" src="https://www.youtube.com/embed/h38C08nfYr0" width="680"></iframe>
+  </section>
+  <div class="slider-wrapper">
+    <div id="slider">
+      <div class="slider1"><img alt="Ronaldo" src="media/ronaldo.png" title="Ronaldo"></div>
+      <div class="slider2"><img alt="Neymar" src="media/neymar.png" title="Neymar"></div>
+      <div class="slider3"><img alt="Mbappa" src="media/mbappa.png" title="Mbappe"></div>
+      <div class="slider4"><img alt="Bruyne" src="media/bruyne.png" title="Bruyne"></div>
+      <div class="slider5"><img alt="Hazard" src="media/hazard.png" title="Hazard"></div>
+    </div>
+    <div id="slider-direction-nav"></div>
+    <div id="slider-control-nav"></div>
+  </div>
+  <script type="text/javascript">
     $(document).ready(function() {
-    	var slider = $('#slider').leanSlider({
-    		directionNav: '#slider-direction-nav',
-    		controlNav: '#slider-control-nav'
-    	}) ;
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav'
+        }) ;
 
-    	$('#slider').click(function(evt){
-    		alert('I was clicked');
-    	})
+        $('#slider').click(function(evt){
+            alert('I was clicked');
+        })
     });
   </script>
-	</body>
+</body>
 </html>
-
-	
