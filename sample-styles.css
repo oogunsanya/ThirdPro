@@ -3,7 +3,8 @@
  * http://dev7studios.com/lean-slider
  */
  
-
+#slider img {
+}
 .lean-slider-slide {
     display: block;
     position: relative;
@@ -59,7 +60,7 @@
     opacity: 0.2;
 }
 .slider-wrapper:hover #slider-control-nav { opacity: 1; }
-#slider-control-nav  {
+#slider-control-nav a {
     width: 14px;
     height: 104px;
     background: url(media/arrow.png) no-repeat 0 0;

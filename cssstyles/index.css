@@ -24,11 +24,15 @@ nav#indexnav ul li a {
 
 nav#indexnav ul li a:hover{
 	background-color: orange;
+	transition-property: background color, width;
+	transition-duration: 1.2s;
+	-webkit-transform: scale(1.1) skewX(24deg);
 }
 
 nav#indexnav #onpage{
   text-decoration: underline;
 }
+
 
 #yel{
   font-family: cursive;
@@ -74,6 +78,9 @@ nav#indexnav11 ul li a {
 
 nav#indexnav11 ul li a:hover{
 	background-color: black;
+	transition-property: background color, width;
+	transition-duration: 1.2s;
+	-webkit-transform: scale(1.1) skewX(24deg);
 }
 
 nav#indexnav11 #onpage{
