@@ -34,15 +34,15 @@
 }
 .slider-wrapper:hover #slider-direction-nav { opacity: 1; }
 #slider-direction-nav a {
-    float: right;
+    float: left;
     display: block;
     width: 26px;
-    height: 107px;
+    height: 37px;
     background: url(media/arrow.png) no-repeat 0 0;
     text-indent: -9999px;
 }
 #slider-direction-nav .lean-slider-next {
-    float: left;
+    float: right;
     background-position: 100% 0;
 }
 
@@ -59,19 +59,7 @@
     transition: opacity 0.2s linear;
     opacity: 0.2;
 }
-.slider-wrapper:hover #slider-control-nav { opacity: 1; }
-#slider-control-nav a {
-    width: 14px;
-    height: 104px;
-    background: url(media/arrow.png) no-repeat 0 0;
-    text-indent: -9999px;
-    margin: 0 3px;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
-}
+
 #slider-control-nav a.active { background-position: 100% 0; }
 
 /* Smartphones (portrait and landscape) ----------- */
